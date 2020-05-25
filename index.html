@@ -4,14 +4,26 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" type="image/ico" href="am.png">
     <title>Creating a Story</title>
 </head>
 <body>
+<div
+    data-aos="fade-in"
+    data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-center"
+  >
 <section id="top">
     <img src="am.png" alt="Logo">
 </section>
-
+</div>
+<div class = "first" data-aos="flip-up" data-aos-delay="1500">
 <section id="main">
     <h1>Complete the Form -<br> Complete the Story!</h1>
     <hr>
@@ -61,10 +73,11 @@
 
 
 
-        <input type="submit" value="Form My Story!">
+        <input class = "button" type="submit" value="Form My Story!">
 
     </form>
 </section>
+</div>
     <footer>
         <h1>
             Demo website | For creating <em>Surveys</em> and <em>Forms</em> Contact
@@ -76,7 +89,13 @@
         <a href="#top"><h1>TOP</h1></a>
     </footer>
 
-
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 200,
+      duration: 2000
+    });
+  </script>
 
 </body>
 </html>

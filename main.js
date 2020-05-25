@@ -1,3 +1,9 @@
+function removeElement(elementId) {
+    // Removes an element from the document
+    var element = document.getElementById(elementId);
+    element.parentNode.removeChild(element);
+}
+
 // Grab values from the submitted form in the URL
 const words = new URLSearchParams(window.location.search);
 
@@ -52,3 +58,4 @@ storyEl.innerHTML = story;
 const moralMessage = document.getElementById('moral-message');
 // Populating the moral-message element with text
 moralMessage.innerHTML = `<span class="italics" title="id: message">"${message}"</span>`;
+removeElement("top")

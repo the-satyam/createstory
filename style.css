@@ -1,6 +1,20 @@
+html {
+  overflow:   scroll;
+}
+#main::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
 body {
     background-color: rgb(205, 199, 64);
+    
+    background-image: url("hot.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: none;
+    backdrop-filter: blur(3px)sepia(0.3);
     font-family: "Open Sans", Arial;
+    padding: none;
 }
 
 form {
@@ -11,12 +25,23 @@ h2 {
     font-size: 20px;
 }
 
-input[type="text"], input[type="number"] {
-    min-height: 15px;
-    border-radius: 5px;
-    border:1px solid #cccccc;
+textarea,input[type="text"], input[type="number"] {
+  width: 60%;
+  position: relative;
+  display: inline-block;
+  border: none;
+  margin: 10px 50px;
+  transition: all 0.4s ease 0s;
+  padding: 10px 20px 10px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: left;
 }
-
+textarea,input[type="text"]{
+    width: 40%
+}
 input[type="radio"] {
     margin-left: 12px;
 }
@@ -28,6 +53,9 @@ input[type="radio"] {
     border-radius: 15px;
     margin: 2% 10%;
     overflow: auto;
+}
+#main:hover{
+    background: peachpuff;
 }
 
 #story {
@@ -68,4 +96,30 @@ footer h1 {
     font-size: 14px;
     background-color: rgb(255, 199, 64);
     font-family: "Open Sans", Arial;
+}
+
+.container > section {
+    margin: 0 auto;
+    padding: 5em 3em;
+    text-align: center;
+    color: #fff;
+}
+
+.button{
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #60a3bc;
+    padding: 10px 30px 10px 30px;
+    border-radius: 50px;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
+
+}
+.button:hover {
+text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
 }
